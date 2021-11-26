@@ -1,0 +1,13 @@
+1.install active directory in system
+2.connect to vpn
+3.give adm id , password, list of ids in files
+
+
+ex: for ids ,, enter as below ,(just copy paste from outlook mail)
+
+xsfgfhgh
+xsfgghh
+xsdgfght
+
+
+4. install pyad in cmd (pip install pyad)
