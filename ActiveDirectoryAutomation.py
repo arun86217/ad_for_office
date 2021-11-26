@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from time import time
+from time import time,sleep
 
 start = time()
 
@@ -28,22 +28,29 @@ from pyad import aduser
 from pyad import *
 
 # our username and password 
-pyad.set_defaults(username= adm_id , password = adm_pass)
+try:
+	pyad.set_defaults(username= adm_id , password = adm_pass)
+except:
+	print("Error at adm defaults")
 
 from time import sleep
 
 count = 1
+total = len(user_list)
 
 for username in user_list:
+	
     try:
+		
         user = aduser.ADUser.from_cn(username)
         sleep(1)
         status = user.disable()
         sleep(0.5)
         if status == None:
             print(f'{count}. {username} disabled')
-        if count == len(user_list):
+        if count == total:
             print("*************Job Finished**************")
+		count = count + 1
     except:
         print(f' error  at {username}')
         
