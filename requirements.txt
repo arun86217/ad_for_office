@@ -14,7 +14,7 @@ xsdgfght
 
 usage :
 
-in the directory 
+in the directory (after unzipping ,go to folder where all files are present)
 
 1. ctrl + shit + right clicke and then choose powershell
 2. type : python3 ActiveDirectoryAutomation.py
