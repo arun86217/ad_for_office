@@ -11,3 +11,12 @@ xsdgfght
 
 
 4. install pyad in cmd (pip install pyad)
+
+usage :
+
+in the directory 
+
+1. ctrl + shit + right clicke and then choose powershell
+2. type : python3 ActiveDirectoryAutomation.py
+3.enter
+4. wait for script to end
